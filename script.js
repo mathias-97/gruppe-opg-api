@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const kommuneSelect = document.getElementById("kommune");
     const currentYear = new Date().getFullYear();
     const yearsToShow = 20;
-
+    
     // Populate year dropdown dynamically
     for (let i = 0; i < yearsToShow; i++) {
         const yearOption = document.createElement("option");
