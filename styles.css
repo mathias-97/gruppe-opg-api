@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-section {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0b3d5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #092a44;
+}
+
+#results {
+    width: 80%;
+    margin-top: 20px;
+}
+
+#loading {
+    font-style: italic;
+    color: #555;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+#business-list {
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #0b3d5f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}

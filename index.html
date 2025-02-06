@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedriftsøk</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <header>
+        <h1>Bedriftsøk</h1>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <label for="kommune">Kommune</label>
+            <select id="kommune">
+                <option value="">Velg fra liste</option>
+                <option value="5061">Trondheim</option>
+                <option value="0301">Oslo</option>
+                <option value="1103">Stavanger</option>
+            </select>
+            
+            <label for="year">Årstall</label>
+            <select id="year">
+                <option value="">Velg fra liste</option>
+            </select>
+            
+            <button id="searchBtn">Søk</button>
+        </section>
+        
+        <section id="results">
+            <div id="loading" style="display: none;">Laster...</div>
+            <div id="error-message" style="display: none;"></div>
+            <div id="business-list"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Bedriftsøk 2025</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
