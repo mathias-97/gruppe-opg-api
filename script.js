@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const yearSelect = document.getElementById("year");
     const currentYear = new Date().getFullYear();
-    const yearsToShow = 20;
+    const yearsToShow = 10;
     
     for (let i = 0; i < yearsToShow; i++) {
         const yearOption = document.createElement("option");
@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
         yearSelect.appendChild(yearOption);
     }
 });
+
