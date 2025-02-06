@@ -25,12 +25,12 @@ header {
     gap: 32px;
     margin: 40px 0;
     justify-content: center;
-    align-items: flex-end; /* Aligns everything to the bottom */
+    align-items: flex-end;
 }
 
 .form-group {
     display: flex;
-    flex-direction: column; /* Keeps label above dropdown */
+    flex-direction: column;
     width: 250px;
 }
 
@@ -44,7 +44,7 @@ select {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    height: 42px; /* Ensure same height as button */
+    height: 42px;
 }
 
 button {
@@ -55,7 +55,7 @@ button {
     background-color: #0b3d5f;
     color: white;
     cursor: pointer;
-    height: 42px; /* Matches dropdown height */
+    height: 42px;
 }
 
 button:hover {
@@ -70,16 +70,40 @@ button:hover {
 #loading {
     font-style: italic;
     color: #555;
+    display: none;
 }
 
 #error-message {
     color: red;
     font-weight: bold;
     display: none;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #business-list {
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.business-item {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #0b3d5f;
+}
+
+.business-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.business-item p {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 footer {
@@ -92,3 +116,16 @@ footer {
     bottom: 0;
 }
 
+/* Optional: Style scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0b3d5f;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d3d3d3;
+}
