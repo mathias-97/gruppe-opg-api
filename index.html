@@ -12,32 +12,39 @@
     </header>
     
     <main>
-        <section class="search-section">
-            <label for="kommune">Kommune</label>
-            <select id="kommune">
-                <option value="">Velg fra liste</option>
-                <option value="5061">Trondheim</option>
-                <option value="0301">Oslo</option>
-                <option value="1103">Stavanger</option>
-            </select>
+        <div class="container">
+            <section class="search-section">
+                <div class="form-group">
+                    <label for="kommune">Kommune</label>
+                    <select id="kommune">
+                        <option value="">Velg fra liste</option>
+                        <option value="5061">Trondheim</option>
+                        <option value="0301">Oslo</option>
+                        <option value="1103">Stavanger</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="year">Årstall</label>
+                    <select id="year">
+                        <option value="">Velg fra liste</option>
+                    </select>
+                </div>
+    
+                <button id="searchBtn">Finn bedrift</button>
+            </section>
             
-            <label for="year">Årstall</label>
-            <select id="year">
-                <option value="">Velg fra liste</option>
-            </select>
-            
-            <button id="searchBtn">Søk</button>
-        </section>
-        
-        <section id="results">
-            <div id="loading" style="display: none;">Laster...</div>
-            <div id="error-message" style="display: none;"></div>
-            <div id="business-list"></div>
-        </section>
+            <section id="results">
+                <div id="loading" style="display: none;">Laster...</div>
+                <div id="error-message" style="display: none;"></div>
+                <div id="business-list"></div>
+            </section>
+        </div>
     </main>
     
+    
     <footer>
-        <p>Bedriftsøk 2025</p>
+        <p>© Bedriftsøk 2025</p>
     </footer>
     
     <script src="script.js"></script>
