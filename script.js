@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadingIndicator = document.getElementById("loading");
     const errorMessage = document.getElementById("error-message");
     const currentYear = new Date().getFullYear();
-    const yearsToShow = 20;
+    const yearsToShow = 10;
 
     // Populate year dropdown dynamically
     for (let i = 0; i < yearsToShow; i++) {
@@ -65,7 +65,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            data.forEach(business => {
+            const filteredBusinesses = data.filter(business => {
+                return (
+                    business.forretningsadresse.kommunenummer === selectedKommune &&
+                    business.stiftelsesdato.startsWith(selectedYear)
+                );
+            });
+            
+            loadingIndicator.style.display = "none";
+            
+            if (filteredBusinesses.length === 0) {
+                errorMessage.textContent = "Ingen bedrifter funnet for valgt kommune og årstall.";
+                errorMessage.style.display = "block";
+                return;
+            }
+            
+            filteredBusinesses.forEach(business => {
                 const businessItem = document.createElement("div");
                 businessItem.classList.add("business-item");
                 businessItem.innerHTML = `
@@ -75,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
                 businessList.appendChild(businessItem);
             });
+            
         } catch (error) {
             console.error("Error fetching business data:", error);
             errorMessage.textContent = "Kunne ikke hente data. Prøv igjen senere.";
