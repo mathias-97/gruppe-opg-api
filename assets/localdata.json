@@ -1,0 +1,20 @@
+[
+    {
+        "organisasjonsnummer": "920132707",
+        "navn": "JOBLOOP AS",
+        "stiftelsesdato": "2017-11-27",
+        "forretningsadresse": {
+            "kommunenummer": "0301",
+            "kommune": "Oslo"
+        }
+    },
+    {
+        "organisasjonsnummer": "915123456",
+        "navn": "NORSK TEKNOLOGI AS",
+        "stiftelsesdato": "2020-06-15",
+        "forretningsadresse": {
+            "kommunenummer": "1103",
+            "kommune": "Stavanger"
+        }
+    }
+]
