@@ -88,14 +88,14 @@ button:hover {
 }
 
 #business-list {
-    margin-top: 35px; /* Ensures space below fixed search bar */
+    margin-top: 60px; /* Ensures space below fixed search bar */
     display: flex;
     flex-direction: column;
     gap: 30px; /* Increased space between items */
     max-height: calc(100vh - 190px); /* Adjusted to fit screen */
     overflow-y: auto;
-    padding-right: 100px;
-    width: 130%; /* Matches the width of the search section */
+    padding-right: 50px;
+    width: 120%; /* Matches the width of the search section */
     margin-left: auto;
     margin-right: auto;
 }
@@ -106,6 +106,9 @@ button:hover {
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #0b3d5f;
+    width: 500px; /* Fixed width for consistency */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .business-item h3 {
