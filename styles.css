@@ -109,8 +109,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
 }
 
 /* Optional: Style scrollbar */
